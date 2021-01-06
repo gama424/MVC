@@ -1,25 +1,20 @@
 using System.Collections.Generic;
-using MVC_CONSOLE.Models;
 using MVC.Views;
+using MVC_CONSOLE.Models;
 
 namespace MVC.Controllers
 {
     public class ProdutoController
     {
-        Produto produtoModel = new Produto();
-        ProdutoView produtoview = new ProdutoView(); 
+        
+        Produto produto = new Produto();
 
+        ProdutoView produtoView = new ProdutoView();
 
-        public void Listar()
+        public void MostrarProdutos()
         {
-            List<Produto> lista = produtoModel.Ler();
-            produtoview.MostrarNoConsole(lista);
-
-        }  
-        public void Buscar(string termo)
-        {
-            List<Produto> lista = produtoModel.Ler().FindAll(x => x.Preco == float.Parse(termo));
-            produtoview.MostrarNoConsole(lista);
+            List<Produto> todos = produto.Ler();
+            produtoView.ListarTodos(todos);
         }
     }
 }

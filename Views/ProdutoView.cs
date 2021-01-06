@@ -6,14 +6,19 @@ namespace MVC.Views
 {
     public class ProdutoView
     {
-        public void MostrarNoConsole(List<Produto> lista)
         
+        public void ListarTodos(List<Produto> produtos)
         {
 
-                foreach(Produto item in lista){
-                    Console.WriteLine($"R$ {item.Preco} - {item.Nome}");
-                    
-                }
+            foreach(Produto item in produtos)
+            {
+                Console.WriteLine($"Código: {item.Codigo}");
+                Console.WriteLine($"Nome: {item.Nome}");
+                Console.WriteLine($"Preço: R${item.Preco}");
+                Console.WriteLine();
+            }
+
         }
+
     }
 }

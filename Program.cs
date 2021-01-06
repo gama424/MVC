@@ -1,17 +1,16 @@
 ﻿using System;
 using MVC.Controllers;
-using MVC.Views;
+using MVC_CONSOLE.Models;
 
-
-
-namespace MVC_CONSOLE
+namespace MVC
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ProdutoController produtos = new ProdutoController();
-            produtos.Buscar("200,56");
+            
+            ProdutoController produtoController = new ProdutoController();
+            produtoController.MostrarProdutos();
 
         }
     }

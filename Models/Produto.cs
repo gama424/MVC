@@ -39,22 +39,22 @@ namespace MVC_CONSOLE.Models
 
             string[] linhas  = File.ReadAllLines(PATH);
 
-            foreach (var linha in linhas)
+            foreach (string item in linhas)
                 
             {
 
-                string[] dados = linha.Split(";");
+                string[] atributos = item.Split(";");
 
                 Produto prod = new Produto();
-                prod.Codigo = Int32.Parse( SepararDado(dados[0]) );
-                prod.Nome = SepararDado(dados[1]);
-                prod.Preco = float.Parse( SepararDado(dados[2] ));
+                prod.Codigo = Int32.Parse( SepararDado(atributos[0]) );
+                prod.Nome = SepararDado(atributos[1]);
+                prod.Preco = float.Parse( SepararDado(atributos[2] ));
 
                 produtos.Add(prod);
                 
             }
 
-            produtos = produtos.OrderBy(z => z.Codigo).ToList();
+          
             return produtos;
         }
 
