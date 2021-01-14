@@ -1,3 +1,4 @@
+
 using System.Collections.Generic;
 using System.IO;
 using E_Player_AspNetCore.Interfaces;
@@ -7,7 +8,7 @@ namespace E_Player_AspNetCore.Models
 {
     public class Equipe : EPlayersBase , IEquipe
     {
-        public string IdEquipe { get; set; }
+        public int IdEquipe { get; set; }
 
         public string Nome { get; set; }
 
@@ -50,7 +51,7 @@ namespace E_Player_AspNetCore.Models
 
             //LENDO AS LINHAS DO CSV
             List<Equipe> equipes = new List<Equipe>();
-            string[] linhas  = File.ReadAllLines(PATH);
+            string[] linhas = File.ReadAllLines(PATH);
 
             foreach(string item in linhas)
             {
