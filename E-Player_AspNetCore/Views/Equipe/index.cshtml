@@ -4,16 +4,30 @@
 }
 
 
-<form method="POST" action='@Url.Action("Cadastrar")' enctype= "multipart/form-data">
+<div class="titulo_pagina">
+    <h1>Cadastro de @ViewData["title"]</h1>
+</div>
 
-    <label>ID</label>
-    <input type="text" name="IdEquipe"/>
 
-    <label>Nome</label>
-    <input type="text" name="Nome"/>
+<form method="POST" action="@Url.Action("Cadastrar")" enctype= "multipart/form-data">
 
-    <label>Imagem</label>
-    <<input type="file" name="Imagem"/>
+
+        <div class="campo">
+            <label>ID</label>
+            <input type="text" name="IdEquipe" id="IdEquipe"/>
+
+        </div>
+<div class="campo">
+
+            <label>Nome</label>
+            <input type="text" name="Nome" id="Nome"/>
+</div>
+
+<div class="campo">
+            <label>Imagem</label>
+            <<input type="file" name="Imagem" id="Imagem"/>
+
+</div>
 
     <button type="submit">Cadastrar</button>
     
