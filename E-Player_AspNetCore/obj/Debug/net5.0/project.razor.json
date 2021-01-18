@@ -15613,6 +15613,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/darth-vader/Documentos/Desenvolvimento de Sistemas/MVC/E-Player_AspNetCore/Views/Jogador/index.cshtml",
+      "TargetPath": "Views\\Jogador\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/darth-vader/Documentos/Desenvolvimento de Sistemas/MVC/E-Player_AspNetCore/Views/Equipe/index.cshtml",
       "TargetPath": "Views\\Equipe\\index.cshtml",
       "FileKind": "mvc"
@@ -15640,6 +15645,11 @@
     {
       "FilePath": "/home/darth-vader/Documentos/Desenvolvimento de Sistemas/MVC/E-Player_AspNetCore/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/darth-vader/Documentos/Desenvolvimento de Sistemas/MVC/E-Player_AspNetCore/Views/Login/Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
